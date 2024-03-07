@@ -1,0 +1,200 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* * div{
+	border: 1px solid red;
+}  */
+
+
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+	background: slateblue; 
+	position: relative;
+	
+}
+
+#side-bar {
+	background-color: rgb(144, 109, 193);
+	padding-top:200px;
+}
+
+#img-deco-top,
+#img-deco-bottom {
+	max-width: 108%;
+}
+
+#img-foto {
+	border: 5px solid darkslategray;
+	border-radius: 50%;
+	max-width: 15%;
+}
+
+td {
+	color: white;
+	font-size: 14e;
+	padding-bottom: 10px;
+	max-width: 100%;
+}
+
+td img {
+	width: 125%;
+}
+
+
+#id-img-linkedin, #id-img-github{
+	width: 300%;
+}
+
+@media only screen and (max-width: 768px) {
+	header{
+		display: flex;
+		flex-direction: column;
+		padding: 1px;
+	}
+
+	header div{
+		/* display: flex;
+		flex-direction: column; */
+	}
+
+	#img-deco-top,
+	#img-deco-bottom {
+		max-width: 108%;
+	}
+
+	#img-foto {
+		min-width: 20%;
+	}
+
+	#side-bar {
+		padding-top:100px;
+		width: 100%;
+	}
+
+	#id-img-linkedin, #id-img-github{
+		width: 100%;
+		margin: auto;
+		min-width: 20%;
+	}
+
+
+
+	#box-img-foto{
+		
+		order: 1;
+	}
+
+	#box-text{
+		order: 2;
+	}
+
+	#box-social-media{
+		/* display: flex;
+		flex-direction: column; */
+		order: 3;
+	}
+
+	#side-bar{
+		display: flex;
+		flex-direction: row;
+		order:4;
+	}
+	#accordion{
+		display: flex;
+		order: 5;
+	}
+
+	h1{
+		font-size:smaller;
+	}
+	h3{
+		font-size: xx-small;
+	}
+
+
+}
+
+
+
+/* 
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+	background: slateblue; 
+	position: relative;
+
+	
+}
+
+#side-bar {
+	background-color: rgb(144, 109, 193);
+	padding-top:200px;
+}
+
+#img-deco-top,
+#img-deco-bottom {
+	max-width: 108%;
+}
+
+#img-foto {
+	border: 5px solid darkslategray;
+	border-radius: 50%;
+	max-width: 15%;
+}
+
+td {
+	color: white;
+	font-size: 14e;
+	padding-bottom: 10px;
+	max-width: 100%;
+}
+
+td img {
+	width: 125%;
+}
+
+.accordion-header {
+	background-color: #73106e; 
+	color: white;
+}
+
+.accordion-header.active {
+	background-color: #e74c3c; 
+}
+
+.accordion-toggle {
+	background-color: rgb(112, 20, 20);
+	display: block;
+	padding: 10px;
+	margin: -10px -15px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+.accordion-toggle.collapsed {
+	background-color: rgb(160, 72, 174);
+}
+
+
+#id-img-linkedin, #id-img-github{
+	width: 300%;
+}
+
+
+@media only screen and (max-width: 768px) {
+	#img-deco-top,
+	#img-deco-bottom {
+		max-width: 152%;
+	}
+
+	#img-foto {
+		max-width: 100%;
+		
+	}
