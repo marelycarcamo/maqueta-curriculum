@@ -1,9 +1,9 @@
-div{
-	border: 1px solid red;
-}
-
 body{
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body div{
+	overflow: auto;
 }
 
 
@@ -16,13 +16,14 @@ header {
 	padding: 5%;
 }
 
-header div:nth-of-type(1) {
+
+.header-box-photo {
 	position: relative;
 	text-align: justify;
 }
 
 /* foto-vitae */
-header div:nth-of-type(1) * {
+#header-box-photo * {
 	border-radius: 50%;
 	border: 5px solid darkslategray;
 	position: absolute;
@@ -31,13 +32,12 @@ header div:nth-of-type(1) * {
 
 }
 
-/* texto dentro del header */
-header div:nth-of-type(2) * {
+#header-box-tittle * {
 	color: white;
 	text-align: end;
 }
 
-header div:nth-of-type(3) a img {
+#header-box-rrss a img {
 	width: 250%;
 	display: flex;
 	flex-direction: column;
@@ -50,9 +50,10 @@ aside{
 	background-color: rgb(144, 109, 193);
 		color:floralwhite;
 	text-align: justify;
+	padding-top: 5%;
+	padding-bottom: 5%;
 	
 }
-
 
 li{
 	text-align: justify;
@@ -61,6 +62,18 @@ li{
 
 .row{
 	overflow: auto;
+}
+
+
+footer{
+	height: 100px;
+	width: 100%;
+	background-color: slateblue;
+	color: aliceblue;
+	font-size: large;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 /* 
@@ -74,41 +87,41 @@ li{
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
-		padding: 5%;
+	
 	}
 
-	header div:nth-of-type(1) {
+	#header-box-photo{
 		order: 1;
 	}
 
-	header div:nth-of-type(1) * {
-		width: 100%;
+	#header-box-photo * {
+		width: 25%;
 	}
 
 
-	header div:nth-of-type(2) {
+	#header-box-tittle {
 		order: 2;
-		width: 100%; 
+	
 	}
 
-	header div:nth-of-type(2) * {
+	#header-box-tittle * {
 		font-size: 1ww;
 		font-size: calc(1em + 1vw);
 	}
 
-	header div:nth-of-type(3) {
+	#header-box-rrss {
 		order: 1;
-		width: 100%;
+	}
+
+	#header-box-rrss *{
+		width: 120%;
 	}
 
 
-
-
-
-
-
-
-
-
+	.bi{
+		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	}
+	
+	
 
 }
