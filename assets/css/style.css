@@ -6,6 +6,16 @@ body{
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
+/* 
+***************HEADER********************************* */
+
+header {
+	display: flex;
+	background-color: slateblue;
+	padding: 5%;
+}
+
 header div:nth-of-type(1) {
 	position: relative;
 	text-align: justify;
@@ -21,12 +31,6 @@ header div:nth-of-type(1) * {
 
 }
 
-header {
-	display: flex;
-	background-color: slateblue;
-	padding: 5%;
-}
-
 /* texto dentro del header */
 header div:nth-of-type(2) * {
 	color: white;
@@ -40,7 +44,7 @@ header div:nth-of-type(3) a img {
 }
 
 /* 
-*****************ASIDE************************** */
+*****************FIN HEADER************************** */
 
 aside{
 	background-color: rgb(144, 109, 193);
@@ -49,6 +53,15 @@ aside{
 	
 }
 
+
+li{
+	text-align: justify;
+
+} 
+
+.row{
+	overflow: auto;
+}
 
 /* 
 ****************** PANTALLA REDUCIDA ************* */
@@ -68,29 +81,31 @@ aside{
 		order: 1;
 	}
 
-	header div:nth-of-type(3) {
-		order: 1;
+	header div:nth-of-type(1) * {
 		width: 100%;
 	}
 
+
 	header div:nth-of-type(2) {
 		order: 2;
-		width: 100%; /*ancho del cuadro texto */
+		width: 100%; 
 	}
 
 	header div:nth-of-type(2) * {
 		font-size: 1ww;
 		font-size: calc(1em + 1vw);
 	}
-	header div:nth-of-type(1) * {
+
+	header div:nth-of-type(3) {
+		order: 1;
 		width: 100%;
 	}
 
-/* ----------------aside-pantalla reducida-------------------- */
 
-/* aside{
-	width: 100%;
-} */
+
+
+
+
 
 
 
