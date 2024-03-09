@@ -44,8 +44,7 @@ header div:nth-of-type(3) a img {
 
 aside{
 	background-color: rgb(144, 109, 193);
-	padding: 5%;
-	color:floralwhite;
+		color:floralwhite;
 	text-align: justify;
 	
 }
@@ -89,9 +88,9 @@ aside{
 
 /* ----------------aside-pantalla reducida-------------------- */
 
-aside{
+/* aside{
 	width: 100%;
-}
+} */
 
 
 
