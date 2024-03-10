@@ -77,7 +77,7 @@ footer {
 
 /* -------------header-pantalla reducida------------- */
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 768px) {
 	header {
 		display: flex;
 		flex-wrap: wrap;
@@ -112,12 +112,20 @@ footer {
 		order: 1;
 	}
 
-	#header-box-rrss *{
-		
+	footer{
+	height: auto;
 	}
 
-	.bi {
-		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+	footer div{
+		display: flex;
+		flex-direction: column;
+		font-size: medium;
+		padding-top: 5%;
+		padding-bottom: 5%;
 	}
+
+	
+
+
 }
 
