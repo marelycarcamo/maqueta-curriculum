@@ -1,9 +1,9 @@
-div {
+/* div {
 	border: 1px solid red;
-}
+} */
 
 body {
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
 .row {
@@ -31,9 +31,9 @@ header {
 	min-width: 10%;
 	max-width: 40%;
 	position: absolute;
-	top: 50%;
 	left: 50%;
-	transform: translateX(-50%);
+	bottom: -20%;
+	transform: translate(-50%,50%); 
 }
 
 #header-box-tittle * {
