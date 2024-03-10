@@ -1,6 +1,6 @@
-/* div {
+div {
 	border: 1px solid red;
-} */
+}
 
 body {
 	font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
@@ -33,7 +33,8 @@ header {
 	position: absolute;
 	left: 50%;
 	bottom: -20%;
-	transform: translate(-50%,50%); 
+	transform: translate(-50%,50%);
+
 }
 
 #header-box-tittle * {
