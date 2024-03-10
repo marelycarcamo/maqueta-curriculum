@@ -1,50 +1,50 @@
-body{
+div {
+	border: 1px solid red;
+}
+
+body {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.container{
+.row {
 	overflow: auto;
 }
-
 
 /* 
 ***************HEADER********************************* */
 
 header {
 	display: flex;
+	flex-direction: row;
 	background-color: slateblue;
 	padding: 5%;
-
 }
-
 
 #header-box-photo {
 	position:relative;
-	text-align: center;
+	
 }
 
 /* foto-vitae */
 #header-box-photo * {
 	border-radius: 50%;
-	border: 5px solid darkslategray;
+	border: 5px solid rgb(47, 51, 79);
+	min-width: 10%;
+	max-width: 50%;
 	position: absolute;
 	top: 50%;
-    left: 40%;
-    transform: translate(-50%, 0%);
-	width: 50%;
-	min-width: 15%;
-
-
-
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 #header-box-tittle * {
 	color: white;
-	text-align: end;
+	text-align: center;
 }
 
 #header-box-rrss a img {
-	width: 250%;
+	max-width: 250%;
+	min-width: 100%;
 	display: flex;
 	flex-direction: column;
 }
@@ -52,26 +52,19 @@ header {
 /* 
 *****************FIN HEADER************************** */
 
-aside{
+aside {
 	background-color: rgb(144, 109, 193);
-		color:floralwhite;
+	color: white;
 	text-align: justify;
 	padding-top: 10%;
 	padding-bottom: 10%;
-	
 }
 
-li{
+li {
 	text-align: justify;
-
-} 
-
-.row{
-	overflow: auto;
 }
 
-
-footer{
+footer {
 	height: 100px;
 	width: 100%;
 	background-color: slateblue;
@@ -87,49 +80,46 @@ footer{
 
 /* -------------header-pantalla reducida------------- */
 
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
 	header {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
-	
 	}
 
-	#header-box-photo{
+	#header-box-photo {
 		order: 1;
+		position: static;
 	}
 
 	#header-box-photo * {
-		
+		max-width: 25%;
+		min-width: 10%;
+		top: 2%;
+		left: 5%;
+		transform: none;
 	}
-
 
 	#header-box-tittle {
 		order: 2;
 		width: 100%;
 	}
-	
 
 	#header-box-tittle * {
 		font-size: 1ww;
 		font-size: calc(1em + 1vw);
-		text-align: center;
+		text-align: end;
 	}
 
 	#header-box-rrss {
 		order: 1;
 	}
 
-	#header-box-rrss *{
-		width: 100%;
+	#header-box-rrss * {
 	}
 
-
-	.bi{
-		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	.bi {
+		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 	}
-	
-	
-
 }
+
