@@ -42,10 +42,8 @@ header {
 }
 
 #header-box-rrss a img {
-	max-width: 350%;
-	min-width: 100%;
-	display: flex;
-	flex-direction: column;
+width: 200%;
+
 }
 
 /* 
@@ -112,6 +110,10 @@ footer {
 
 	#header-box-rrss {
 		order: 1;
+	}
+
+	#header-box-rrss *{
+		
 	}
 
 	.bi {
