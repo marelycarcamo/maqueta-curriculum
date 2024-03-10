@@ -16,8 +16,7 @@ body {
 header {
 	display: flex;
 	flex-direction: row;
-	background-color: slateblue;
-	padding: 5%;
+	background-color: slateblue;	
 }
 
 #header-box-photo {
@@ -30,7 +29,7 @@ header {
 	border-radius: 50%;
 	border: 5px solid rgb(47, 51, 79);
 	min-width: 10%;
-	max-width: 50%;
+	max-width: 40%;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -43,7 +42,7 @@ header {
 }
 
 #header-box-rrss a img {
-	max-width: 250%;
+	max-width: 350%;
 	min-width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -68,7 +67,7 @@ footer {
 	height: 100px;
 	width: 100%;
 	background-color: slateblue;
-	color: aliceblue;
+	color: white;
 	font-size: large;
 	display: flex;
 	align-items: center;
@@ -113,9 +112,6 @@ footer {
 
 	#header-box-rrss {
 		order: 1;
-	}
-
-	#header-box-rrss * {
 	}
 
 	.bi {
